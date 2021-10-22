@@ -1,0 +1,675 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_003{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:13.1px;color:rgb(192,80,77);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:13.1px;color:rgb(192,80,77);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:36.0px;color:rgb(31,31,31);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:36.0px;color:rgb(31,31,31);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_030{font-family:Times,serif;font-size:19.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Times,serif;font-size:19.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_070{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_070{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_071{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_071{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_037{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_072{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_072{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Arial,serif;font-size:12.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Arial,serif;font-size:12.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Arial,serif;font-size:12.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_050{font-family:Arial,serif;font-size:12.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_052{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_052{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_048{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Times,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Times,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_057{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_057{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_063{font-family:Arial,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_063{font-family:Arial,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_059{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_059{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_064{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_064{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_061{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_061{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_065{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_065{font-family:Arial,serif;font-size:10.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background01.jpg" width=595 height=842></div>
+<div style="position:absolute;left:169.33px;top:39.28px" class="cls_003"><span class="cls_003">Republic of the Philippines</span></div>
+<div style="position:absolute;left:169.33px;top:55.03px" class="cls_004"><span class="cls_004">SURIGAO STATE COLLEGE OF TECHNOLOGY</span></div>
+<div style="position:absolute;left:169.33px;top:70.78px" class="cls_003"><span class="cls_003">Narciso Street, Surigao City</span></div>
+<div style="position:absolute;left:323.63px;top:295.85px" class="cls_013"><span class="cls_013">CONTENTS:</span></div>
+<div style="position:absolute;left:323.63px;top:318.85px" class="cls_014"><span class="cls_014">Module 1 - Science and the Environment</span></div>
+<div style="position:absolute;left:323.63px;top:343.10px" class="cls_014"><span class="cls_014">Module 2 - The Spheres of the Earth and</span></div>
+<div style="position:absolute;left:323.63px;top:357.85px" class="cls_014"><span class="cls_014">Environmental Systems</span></div>
+<div style="position:absolute;left:323.63px;top:382.37px" class="cls_014"><span class="cls_014">Module 3 - Environmental Problems / Issues</span></div>
+<div style="position:absolute;left:323.63px;top:406.37px" class="cls_014"><span class="cls_014">Module 4 - Environmental Worldviews and</span></div>
+<div style="position:absolute;left:323.63px;top:430.12px" class="cls_014"><span class="cls_014">Ethics</span></div>
+<div style="position:absolute;left:323.63px;top:454.12px" class="cls_014"><span class="cls_014">Module 5 - Sustainable Development and</span></div>
+<div style="position:absolute;left:323.63px;top:468.65px" class="cls_014"><span class="cls_014">Sustainability</span></div>
+<div style="position:absolute;left:136.30px;top:471.65px" class="cls_010"><span class="cls_010">LEARNI</span></div>
+<div style="position:absolute;left:155.08px;top:525.67px" class="cls_010"><span class="cls_010">NG</span></div>
+<div style="position:absolute;left:155.08px;top:579.42px" class="cls_010"><span class="cls_010">MODUL</span></div>
+<div style="position:absolute;left:155.08px;top:633.20px" class="cls_010"><span class="cls_010">E</span></div>
+<div style="position:absolute;left:110.80px;top:688.70px" class="cls_011"><span class="cls_011">GE Envi Sci Eng’g -</span></div>
+<div style="position:absolute;left:110.80px;top:703.20px" class="cls_011"><span class="cls_011">Environmental Science</span></div>
+<div style="position:absolute;left:110.80px;top:717.73px" class="cls_011"><span class="cls_011">Engineering</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:852px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background02.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:176.58px;top:71.03px" class="cls_018"><span class="cls_018">Module 1 - SCIENCE AND THE ENVIRONMENT</span></div>
+<div style="position:absolute;left:214.85px;top:90.03px" class="cls_018"><span class="cls_018">(By Gheleene Sering-Buenaflor)</span></div>
+<div style="position:absolute;left:72.03px;top:121.55px" class="cls_018"><span class="cls_018">Time Frame: </span><span class="cls_014">2 hours</span></div>
+<div style="position:absolute;left:72.03px;top:153.30px" class="cls_018"><span class="cls_018">Introduction</span></div>
+<div style="position:absolute;left:108.05px;top:172.30px" class="cls_014"><span class="cls_014">One of the greatest challenges since the 20</span><span class="cls_021"><sup>th</sup></span><span class="cls_014"> century is the deterioration of our</span></div>
+<div style="position:absolute;left:72.03px;top:191.30px" class="cls_014"><span class="cls_014">environment. We have become familiar with various forms of environmental problems in our</span></div>
+<div style="position:absolute;left:72.03px;top:210.33px" class="cls_014"><span class="cls_014">air, water, and land. Natural resources such as our forests, fisheries, and wildlife have been</span></div>
+<div style="position:absolute;left:72.03px;top:229.33px" class="cls_014"><span class="cls_014">greatly reduced with increase in human consumption & exploitation. Industrial processes have</span></div>
+<div style="position:absolute;left:72.03px;top:248.33px" class="cls_014"><span class="cls_014">resulted in pollution of our air, water bodies, and land, and some even causing health impacts.</span></div>
+<div style="position:absolute;left:108.05px;top:280.08px" class="cls_014"><span class="cls_014">Because of these recent issues, environmental science has developed as a separate</span></div>
+<div style="position:absolute;left:72.03px;top:299.10px" class="cls_014"><span class="cls_014">field of study in the recent decades. From your field of study, why is it important for you to</span></div>
+<div style="position:absolute;left:72.03px;top:318.10px" class="cls_014"><span class="cls_014">know about environmental science? Read along as you learn about environmental science</span></div>
+<div style="position:absolute;left:72.03px;top:336.85px" class="cls_014"><span class="cls_014">and its relevance to YOUR field of specialization!</span></div>
+<div style="position:absolute;left:72.03px;top:374.87px" class="cls_018"><span class="cls_018">Objectives:</span></div>
+<div style="position:absolute;left:108.05px;top:393.87px" class="cls_014"><span class="cls_014">At the end of this lesson, the students should be able to:</span></div>
+<div style="position:absolute;left:117.05px;top:413.37px" class="cls_014"><span class="cls_014">•  describe environmental science as a discipline</span></div>
+<div style="position:absolute;left:117.05px;top:432.87px" class="cls_014"><span class="cls_014">•  develop awareness of environmental interactions of day-to-day activities</span></div>
+<div style="position:absolute;left:117.05px;top:452.62px" class="cls_014"><span class="cls_014">•  explain the principles of environmental science</span></div>
+<div style="position:absolute;left:117.05px;top:472.15px" class="cls_014"><span class="cls_014">•  verbally express how environmental science is related to students’ field of study</span></div>
+<div style="position:absolute;left:144.55px;top:503.90px" class="cls_023"><span class="cls_023">Answer the following before proceeding to the next pages:</span></div>
+<div style="position:absolute;left:111.80px;top:522.65px" class="cls_024"><span class="cls_024">------c</span><span class="cls_023">u</span><span class="cls_024">t a</span><span class="cls_023">long thi</span><span class="cls_024">s</span><span class="cls_023"> lin</span><span class="cls_024">e</span><span class="cls_023"> </span><span class="cls_024">a</span><span class="cls_023">nd </span><span class="cls_024">ret</span><span class="cls_023">u</span><span class="cls_024">r</span><span class="cls_023">n to </span><span class="cls_024">y</span><span class="cls_023">ou</span><span class="cls_024">r</span><span class="cls_023"> in</span><span class="cls_024">str</span><span class="cls_023">u</span><span class="cls_024">ct</span><span class="cls_023">o</span><span class="cls_024">r</span><span class="cls_023"> wh</span><span class="cls_024">e</span><span class="cls_023">n </span><span class="cls_024">y</span><span class="cls_023">ou </span><span class="cls_024">meet face-</span><span class="cls_023">to</span><span class="cls_024">-face------</span></div>
+<div style="position:absolute;left:72.03px;top:541.90px" class="cls_018"><span class="cls_018">Pre-test</span></div>
+<div style="position:absolute;left:72.03px;top:560.92px" class="cls_014"><span class="cls_014">Name:</span></div>
+<div style="position:absolute;left:360.15px;top:560.92px" class="cls_014"><span class="cls_014">Course/Year/Section:</span></div>
+<div style="position:absolute;left:510.73px;top:560.92px" class="cls_014"><span class="cls_014">_</span></div>
+<div style="position:absolute;left:94.55px;top:580.68px" class="cls_014"><span class="cls_014">•  What is environmental science?</span></div>
+<div style="position:absolute;left:94.55px;top:674.45px" class="cls_014"><span class="cls_014">•  Can you give examples of principles of environmental science?</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">1</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1704px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background03.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:72.03px;top:71.03px" class="cls_018"><span class="cls_018">Learning Activities</span></div>
+<div style="position:absolute;left:94.55px;top:96.28px" class="cls_035"><span class="cls_035">A. </span><span class="cls_018"> </span><span class="cls_070">Environmental Science as a Discipline</span></div>
+<div style="position:absolute;left:112.55px;top:121.55px" class="cls_014"><span class="cls_014">What is the environment? It is the totality of what surrounds us. Outside our bodies,</span></div>
+<div style="position:absolute;left:94.55px;top:140.80px" class="cls_014"><span class="cls_014">we have the living (biotic) component of the environment, such as plants and animals,</span></div>
+<div style="position:absolute;left:94.55px;top:159.80px" class="cls_014"><span class="cls_014">and the non-living (abiotic) component composed of the air, water, sunlight, land, etc. Of</span></div>
+<div style="position:absolute;left:94.55px;top:178.55px" class="cls_014"><span class="cls_014">course,  these  components  interact  with  each  other.  For  example,  </span><span class="cls_071">birds</span></div>
+<div style="position:absolute;left:494.70px;top:178.55px" class="cls_014"><span class="cls_014">(biotic</span></div>
+<div style="position:absolute;left:94.55px;top:197.55px" class="cls_014"><span class="cls_014">component), fly through the </span><span class="cls_071">air</span><span class="cls_014"> (abiotic component). </span><span class="cls_071">Microorganisms</span><span class="cls_014"> (biotic component)</span></div>
+<div style="position:absolute;left:94.55px;top:216.58px" class="cls_014"><span class="cls_014">live within our </span><span class="cls_071">soils</span><span class="cls_014"> (abiotic component).</span></div>
+<div style="position:absolute;left:112.55px;top:254.58px" class="cls_014"><span class="cls_014">Environmental Science (ES) is the “systematic study of our environment and our place</span></div>
+<div style="position:absolute;left:94.55px;top:273.57px" class="cls_014"><span class="cls_014">in it” (Cunningham & Cunningham, 2013). ES is an inter-disciplinary field of study of the</span></div>
+<div style="position:absolute;left:94.55px;top:292.60px" class="cls_014"><span class="cls_014">biological and physical sciences. By “inter-disciplinary”, it integrates concepts from the</span></div>
+<div style="position:absolute;left:94.55px;top:311.60px" class="cls_014"><span class="cls_014">fields of biology, chemistry, physics, mathematics, statistics, ecology, and geology,</span></div>
+<div style="position:absolute;left:94.55px;top:330.60px" class="cls_014"><span class="cls_014">among other scientific fields, in order to analyze and solve problems concerning our</span></div>
+<div style="position:absolute;left:94.55px;top:349.60px" class="cls_014"><span class="cls_014">environment (Figure 1).</span></div>
+<div style="position:absolute;left:180.08px;top:387.37px" class="cls_018"><span class="cls_018">Figure 1</span></div>
+<div style="position:absolute;left:180.08px;top:406.37px" class="cls_037"><span class="cls_037">Field of Environmental Science</span></div>
+<div style="position:absolute;left:180.08px;top:610.67px" class="cls_037"><span class="cls_037">Note. </span><span class="cls_014">Environmental science as an interdisciplinary</span></div>
+<div style="position:absolute;left:180.08px;top:629.45px" class="cls_014"><span class="cls_014">field. From </span><span class="cls_037">Introduction to Environmental Science. Ch</span></div>
+<div style="position:absolute;left:180.08px;top:648.45px" class="cls_037"><span class="cls_037">1 Science & The Environment 1 Understanding Our</span></div>
+<div style="position:absolute;left:180.08px;top:667.45px" class="cls_037"><span class="cls_037">Environment 2 The Environment and Society</span><span class="cls_014">, by A.</span></div>
+<div style="position:absolute;left:180.08px;top:686.45px" class="cls_014"><span class="cls_014">Flowers,   n.d.   Copyright   by   The   McGraw-Hill</span></div>
+<div style="position:absolute;left:180.08px;top:705.45px" class="cls_014"><span class="cls_014">Companies, Inc.</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">2</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2556px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background04.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:112.55px;top:71.03px" class="cls_014"><span class="cls_014">As a </span><span class="cls_023">science</span><span class="cls_014">, ES is a study of connections in nature. It makes use of the scientific</span></div>
+<div style="position:absolute;left:94.55px;top:90.03px" class="cls_014"><span class="cls_014">method (Figure 2) in understanding the processes and systems in our environment. ES</span></div>
+<div style="position:absolute;left:94.55px;top:109.03px" class="cls_014"><span class="cls_014">utilizes the other scientific fields mentioned above to study environmental problems and</span></div>
+<div style="position:absolute;left:94.55px;top:128.05px" class="cls_014"><span class="cls_014">the  impacts  of  human  activities  on  the  environment.  Another  definition  is,  that</span></div>
+<div style="position:absolute;left:94.55px;top:147.05px" class="cls_014"><span class="cls_014">environmental science is the study of interactions between humans and the environment.</span></div>
+<div style="position:absolute;left:94.55px;top:166.05px" class="cls_014"><span class="cls_014">ES is a relatively new field of science which came out of the environmental movement in</span></div>
+<div style="position:absolute;left:94.55px;top:185.05px" class="cls_014"><span class="cls_014">the 1960’s as environmental issues such as oil spills, release of environmental toxins and</span></div>
+<div style="position:absolute;left:94.55px;top:204.08px" class="cls_014"><span class="cls_014">chemicals, and deforestation surfaced. Among the major influences to the growing</span></div>
+<div style="position:absolute;left:94.55px;top:222.83px" class="cls_014"><span class="cls_014">environmental awareness during those decades were the books of Rachel Carson (“Silent</span></div>
+<div style="position:absolute;left:94.55px;top:241.83px" class="cls_014"><span class="cls_014">Spring”, 1968) and Paul R. Ehrlich (“The Population Bomb”, 1968).</span></div>
+<div style="position:absolute;left:94.55px;top:279.83px" class="cls_018"><span class="cls_018">Figure 2</span></div>
+<div style="position:absolute;left:94.55px;top:302.35px" class="cls_037"><span class="cls_037">The Scientific Method</span></div>
+<div style="position:absolute;left:94.55px;top:641.95px" class="cls_037"><span class="cls_037">Note</span><span class="cls_014">. The Editors of Encyclopaedia Britannica. (2020). Scientific method. In Encyclopedia</span></div>
+<div style="position:absolute;left:94.55px;top:660.70px" class="cls_014"><span class="cls_014">Britannica. Encyclopædia Britannica, Inc. https:/</span><A HREF="http://www.britannica.com/science/scientific-">/www.britannica.com/science/scientific-</A> </div>
+<div style="position:absolute;left:94.55px;top:679.70px" class="cls_014"><span class="cls_014">method</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">3</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3408px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background05.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:112.55px;top:71.03px" class="cls_014"><span class="cls_014">Why do we need to study environmental science, not just the separate fields of the</span></div>
+<div style="position:absolute;left:94.55px;top:90.03px" class="cls_014"><span class="cls_014">sciences? Well, environmental problems such as air and water pollution cannot be</span></div>
+<div style="position:absolute;left:94.55px;top:109.03px" class="cls_014"><span class="cls_014">analyzed and solved solely by using one field of science. For example, you need to know</span></div>
+<div style="position:absolute;left:94.55px;top:128.05px" class="cls_014"><span class="cls_014">the nature of the pollutant (its composition and characteristics) - that’s chemistry! How</span></div>
+<div style="position:absolute;left:94.55px;top:147.05px" class="cls_014"><span class="cls_014">fast does the pollutant flow? - that’s physics! What organisms are affected by the</span></div>
+<div style="position:absolute;left:94.55px;top:166.05px" class="cls_014"><span class="cls_014">pollution? -that’s biology! And so on and so forth.</span></div>
+<div style="position:absolute;left:157.83px;top:203.83px" class="cls_023"><span class="cls_023">Pause and ponder:</span></div>
+<div style="position:absolute;left:157.83px;top:222.83px" class="cls_014"><span class="cls_014">What environmental problems are you aware of? Give some examples.</span></div>
+<div style="position:absolute;left:112.55px;top:354.10px" class="cls_014"><span class="cls_014">Environmental science is an applied science that gives attention to understanding and</span></div>
+<div style="position:absolute;left:94.55px;top:373.12px" class="cls_014"><span class="cls_014">solving environmental challenges that our world is facing. Since almost all of our activities</span></div>
+<div style="position:absolute;left:94.55px;top:392.12px" class="cls_014"><span class="cls_014">interact with our environment, we need to know and understand how we affect our</span></div>
+<div style="position:absolute;left:94.55px;top:411.12px" class="cls_014"><span class="cls_014">environment in our day-to-day activities. Can you list some examples below?</span></div>
+<div style="position:absolute;left:175.83px;top:442.62px" class="cls_018"><span class="cls_018">Classwork</span><span class="cls_014">: Smile! Take a photo of yourself holding your answers below.</span></div>
+<div style="position:absolute;left:175.83px;top:461.40px" class="cls_014"><span class="cls_014">Write legibly using dark ink. Upload your photo in Google Classroom</span></div>
+<div style="position:absolute;left:175.83px;top:480.15px" class="cls_014"><span class="cls_014">(see “Classwork” in Google Classroom)</span></div>
+<div style="position:absolute;left:111.80px;top:499.40px" class="cls_024"><span class="cls_024">-----------------------------------------------------------------------------------------------------------------------</span></div>
+<div style="position:absolute;left:94.55px;top:533.15px" class="cls_014"><span class="cls_014">Name:</span></div>
+<div style="position:absolute;left:94.55px;top:558.42px" class="cls_014"><span class="cls_014">Course / Year / Section:</span></div>
+<div style="position:absolute;left:124.05px;top:582.17px" class="cls_018"><span class="cls_018">Environmental</span></div>
+<div style="position:absolute;left:245.35px;top:582.17px" class="cls_018"><span class="cls_018">What activities in your day-to-day life interact with</span></div>
+<div style="position:absolute;left:132.80px;top:596.68px" class="cls_018"><span class="cls_018">component</span></div>
+<div style="position:absolute;left:285.38px;top:596.68px" class="cls_018"><span class="cls_018">these environmental components?</span></div>
+<div style="position:absolute;left:100.30px;top:626.42px" class="cls_018"><span class="cls_018">AIR</span></div>
+<div style="position:absolute;left:100.30px;top:661.95px" class="cls_018"><span class="cls_018">WATER</span></div>
+<div style="position:absolute;left:100.30px;top:697.20px" class="cls_018"><span class="cls_018">LAND</span></div>
+<div style="position:absolute;left:100.30px;top:725.72px" class="cls_018"><span class="cls_018">BIOTA</span></div>
+<div style="position:absolute;left:100.30px;top:740.22px" class="cls_018"><span class="cls_018">(PLANTS & ANIMALS)</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">4</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4260px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background06.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:112.55px;top:71.03px" class="cls_023"><span class="cls_023">Environmental science </span><span class="cls_014">is related, but different, from the fields of environmental</span></div>
+<div style="position:absolute;left:94.55px;top:90.03px" class="cls_014"><span class="cls_014">engineering, environmental management, and environmental studies. ES is a scientific</span></div>
+<div style="position:absolute;left:94.55px;top:109.03px" class="cls_014"><span class="cls_014">inquiry into understanding the environment and environmental problems. </span><span class="cls_023">Environmental</span></div>
+<div style="position:absolute;left:94.55px;top:128.05px" class="cls_023"><span class="cls_023">engineering </span><span class="cls_014">is an applied field to design and use technology to improve environmental</span></div>
+<div style="position:absolute;left:94.55px;top:147.05px" class="cls_014"><span class="cls_014">quality, while </span><span class="cls_023">environmental management </span><span class="cls_014">is focused on planning and making policies</span></div>
+<div style="position:absolute;left:94.55px;top:166.05px" class="cls_014"><span class="cls_014">to manage our environment. In contrast, </span><span class="cls_023">environmental studies </span><span class="cls_014">is more social-science</span></div>
+<div style="position:absolute;left:94.55px;top:185.05px" class="cls_014"><span class="cls_014">oriented and deals with how humans interact with the environment. For example,</span></div>
+<div style="position:absolute;left:94.55px;top:204.08px" class="cls_023"><span class="cls_023">environmental engineers </span><span class="cls_014">would want to develop technologies that will help solve water</span></div>
+<div style="position:absolute;left:94.55px;top:222.83px" class="cls_014"><span class="cls_014">pollution; </span><span class="cls_023">environmental managers </span><span class="cls_014">might be involved in making policies that would</span></div>
+<div style="position:absolute;left:94.55px;top:241.83px" class="cls_014"><span class="cls_014">lessen discharge of pollutants to a river. </span><span class="cls_023">Environmental studies </span><span class="cls_014">practitioners would be</span></div>
+<div style="position:absolute;left:94.55px;top:260.83px" class="cls_014"><span class="cls_014">interested on how citizens view pollution in their community, while </span><span class="cls_023">environmental</span></div>
+<div style="position:absolute;left:94.55px;top:279.83px" class="cls_023"><span class="cls_023">scientists </span><span class="cls_014">would be quantifying the pollutants in river and simulating their movement in</span></div>
+<div style="position:absolute;left:94.55px;top:298.85px" class="cls_014"><span class="cls_014">the environment through environmental modeling (Figure 3).</span></div>
+<div style="position:absolute;left:94.55px;top:336.85px" class="cls_018"><span class="cls_018">Figure 3</span></div>
+<div style="position:absolute;left:94.55px;top:359.35px" class="cls_037"><span class="cls_037">Occupations related to environmental science</span></div>
+<div style="position:absolute;left:94.55px;top:544.42px" class="cls_037"><span class="cls_037">Note. </span><span class="cls_014">Top left: an environmental scientist obtaining a water sample from a stream; right:</span></div>
+<div style="position:absolute;left:94.55px;top:563.42px" class="cls_014"><span class="cls_014">environmental engineers looking at a plan related to clean energy with windmill on the</span></div>
+<div style="position:absolute;left:94.55px;top:582.42px" class="cls_014"><span class="cls_014">background.  From </span><span class="cls_037"> The  Newest  Gold  Mining Tool:  Bacteria</span><span class="cls_014">, by  C. Calam, 2018,</span></div>
+<div style="position:absolute;left:94.55px;top:601.43px" class="cls_072"><span class="cls_072"> </span><A HREF="https://www.thermofisher.com/blog/mining/the-newest-gold-mining-tool-bacteria/">https://www.thermofisher.com/blog/mining/the-newest-gold-mining-tool-bacteria/</A> <span class="cls_047"> </span><span class="cls_014">and </span><span class="cls_037">20.</span></div>
+<div style="position:absolute;left:94.55px;top:620.42px" class="cls_037"><span class="cls_037">Environmental   Engineer</span><span class="cls_014">,   by   CNN   Money,</span></div>
+<div style="position:absolute;left:335.76px;top:620.42px" class="cls_014"><span class="cls_014">2012, </span><span class="cls_047">  </span><A HREF="https://money.cnn.com/pf/best-jobs/2012/snapshots/20.html">https://money.cnn.com/pf/best-</A> </span></div>
+<div style="position:absolute;left:94.55px;top:639.45px" class="cls_072"><span class="cls_072"> </span><A HREF="https://money.cnn.com/pf/best-jobs/2012/snapshots/20.html">jobs/2012/snapshots/20.html</A> </div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">5</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5112px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background07.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:94.55px;top:71.30px" class="cls_035"><span class="cls_035">B.</span></div>
+<div style="position:absolute;left:112.55px;top:71.03px" class="cls_018"><span class="cls_018">Environmental Science Principles </span><span class="cls_014">(excerpts from Boersema & Reijnders (2009)</span></div>
+<div style="position:absolute;left:94.55px;top:96.55px" class="cls_035"><span class="cls_035">1.</span></div>
+<div style="position:absolute;left:112.55px;top:96.28px" class="cls_018"><span class="cls_018">The Principle of Sustainable Development</span></div>
+<div style="position:absolute;left:130.55px;top:115.30px" class="cls_014"><span class="cls_014">This principle states that “we humans must move towards the adoption of a</span></div>
+<div style="position:absolute;left:112.55px;top:134.30px" class="cls_014"><span class="cls_014">lifestyle that can continue indefinitely.” Simply, we must stop destroying the very</span></div>
+<div style="position:absolute;left:112.55px;top:153.30px" class="cls_014"><span class="cls_014">necessities of our own existence. Our present lifestyle cannot continue indefinitely (is</span></div>
+<div style="position:absolute;left:112.55px;top:172.30px" class="cls_014"><span class="cls_014">not sustainable).</span></div>
+<div style="position:absolute;left:126.05px;top:204.33px" class="cls_014"><span class="cls_014">Perhaps the most popular definition of sustainable development is the one</span></div>
+<div style="position:absolute;left:126.05px;top:223.33px" class="cls_014"><span class="cls_014">contained in the report “Our Common Future” (a.k.a. Brundtland Report)</span></div>
+<div style="position:absolute;left:126.05px;top:242.33px" class="cls_014"><span class="cls_014">released by the United Nations World Commission on Environment and</span></div>
+<div style="position:absolute;left:126.05px;top:261.08px" class="cls_014"><span class="cls_014">Development in 1987:</span></div>
+<div style="position:absolute;left:234.60px;top:292.09px" class="cls_049"><span class="cls_049">“Sustainable development</span></div>
+<div style="position:absolute;left:159.83px;top:312.84px" class="cls_049"><span class="cls_049">is development that meets the needs of the  present</span></div>
+<div style="position:absolute;left:145.55px;top:333.59px" class="cls_049"><span class="cls_049">without compromising the </span><span class="cls_050">ability  </span><span class="cls_049">of  future  generations</span></div>
+<div style="position:absolute;left:237.10px;top:354.59px" class="cls_049"><span class="cls_049">to meet </span><span class="cls_050">their </span><span class="cls_049">own needs.”</span></div>
+<div style="position:absolute;left:141.30px;top:388.62px" class="cls_014"><span class="cls_014">Sustainable development is a goal composed of three pillars: economy,</span></div>
+<div style="position:absolute;left:126.05px;top:407.37px" class="cls_014"><span class="cls_014">society, and environment. These</span></div>
+<div style="position:absolute;left:308.63px;top:407.37px" class="cls_014"><span class="cls_014">three  interdependent pillars must be</span></div>
+<div style="position:absolute;left:126.05px;top:426.87px" class="cls_014"><span class="cls_014">balanced as shown in Figure 4:</span></div>
+<div style="position:absolute;left:126.05px;top:464.65px" class="cls_018"><span class="cls_018">Figure 4</span></div>
+<div style="position:absolute;left:126.05px;top:487.40px" class="cls_037"><span class="cls_037">The Pillars of Sustainability.</span></div>
+<div style="position:absolute;left:126.05px;top:702.20px" class="cls_037"><span class="cls_037">Note</span><span class="cls_014">. From Purvis, B., Mao, Y., & Robinson, D. (2019). Three pillars of</span></div>
+<div style="position:absolute;left:126.05px;top:721.22px" class="cls_014"><span class="cls_014">sustainability: In search of conceptual origins. Sustainability Science, 14(3),</span></div>
+<div style="position:absolute;left:126.05px;top:739.97px" class="cls_014"><span class="cls_014">681-695. </span><A HREF="https://doi.org/10.1007/s11625-018-0627-5/">https://doi.org/10.1007/s11625-018-0627-5</A> </div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">6</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5964px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background08.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:94.55px;top:71.30px" class="cls_035"><span class="cls_035">2.</span></div>
+<div style="position:absolute;left:112.55px;top:71.03px" class="cls_018"><span class="cls_018">The Principle of the Conservation of Energy (First Law of Thermodynamics)</span></div>
+<div style="position:absolute;left:130.55px;top:90.03px" class="cls_014"><span class="cls_014">Quantity of energy is constant: energy can be neither created nor destroyed, but</span></div>
+<div style="position:absolute;left:112.55px;top:109.03px" class="cls_014"><span class="cls_014">only </span><span class="cls_037">transformed</span><span class="cls_014">.</span></div>
+<div style="position:absolute;left:94.55px;top:147.07px" class="cls_035"><span class="cls_035">3.</span></div>
+<div style="position:absolute;left:112.55px;top:146.80px" class="cls_018"><span class="cls_018">The Principle E=MC</span><span class="cls_036"><sup>2</sup></span><span class="cls_018"> (energy equals mass times the speed of light squared)</span></div>
+<div style="position:absolute;left:130.80px;top:165.80px" class="cls_014"><span class="cls_014">The aspect of this principle that is important for environmental science is that</span></div>
+<div style="position:absolute;left:112.55px;top:184.80px" class="cls_037"><span class="cls_037">matter is a form of energy</span><span class="cls_014">.</span></div>
+<div style="position:absolute;left:94.55px;top:223.10px" class="cls_035"><span class="cls_035">4.</span></div>
+<div style="position:absolute;left:112.55px;top:222.83px" class="cls_018"><span class="cls_018">The Principle of the Conservation of Matter</span></div>
+<div style="position:absolute;left:130.55px;top:241.83px" class="cls_037"><span class="cls_037">Quantity of matter is constant</span><span class="cls_014">: energy cannot be transformed from a material form</span></div>
+<div style="position:absolute;left:112.55px;top:261.08px" class="cls_014"><span class="cls_014">to a non-material form or vice versa. Matter can change from being in a state of high</span></div>
+<div style="position:absolute;left:112.55px;top:280.08px" class="cls_014"><span class="cls_014">potential energy to being in one of low potential energy, but the total amount of matter</span></div>
+<div style="position:absolute;left:112.55px;top:299.10px" class="cls_014"><span class="cls_014">in both states is the same.</span></div>
+<div style="position:absolute;left:94.55px;top:337.12px" class="cls_035"><span class="cls_035">5.</span></div>
+<div style="position:absolute;left:112.55px;top:336.85px" class="cls_018"><span class="cls_018">The Entropy Principle (Second Law of Thermodynamics)</span></div>
+<div style="position:absolute;left:130.55px;top:355.85px" class="cls_014"><span class="cls_014">This may be expressed in terms of systems (see box on the following page):</span></div>
+<div style="position:absolute;left:112.55px;top:374.87px" class="cls_037"><span class="cls_037">systems tend towards disorder (the amount of entropy in a system tends to increase)</span><span class="cls_014">;</span></div>
+<div style="position:absolute;left:112.55px;top:393.87px" class="cls_014"><span class="cls_014">or the degree of ‘organization’ of matter in a system will tend to decrease. In</span></div>
+<div style="position:absolute;left:112.55px;top:412.87px" class="cls_014"><span class="cls_014">environmental  science,  this means  that whatever  concentrations  of energy  or</span></div>
+<div style="position:absolute;left:112.55px;top:431.87px" class="cls_014"><span class="cls_014">chemical elements presently existing on earth will tend to lessen over time. There will</span></div>
+<div style="position:absolute;left:112.55px;top:450.62px" class="cls_014"><span class="cls_014">be a day when humans cannot use fossil fuels, uranium or metals, when the amount</span></div>
+<div style="position:absolute;left:112.55px;top:469.65px" class="cls_014"><span class="cls_014">of usable energy needed to extract them exceeds the amount of usable energy they</span></div>
+<div style="position:absolute;left:112.55px;top:488.65px" class="cls_014"><span class="cls_014">provide.</span></div>
+<div style="position:absolute;left:94.55px;top:526.92px" class="cls_035"><span class="cls_035">6.</span></div>
+<div style="position:absolute;left:112.55px;top:526.65px" class="cls_018"><span class="cls_018">The Principle of Evolution through natural selection</span></div>
+<div style="position:absolute;left:130.55px;top:545.67px" class="cls_014"><span class="cls_014">“Life forms on earth have evolved from a common source, each surviving as a</span></div>
+<div style="position:absolute;left:112.55px;top:564.67px" class="cls_014"><span class="cls_014">species as a result of its being genetically adapted to its biological and physical</span></div>
+<div style="position:absolute;left:112.55px;top:583.67px" class="cls_014"><span class="cls_014">environment.” The principle of sustainable development aims to lead us to a stable</span></div>
+<div style="position:absolute;left:112.55px;top:602.67px" class="cls_014"><span class="cls_014">relationship with our environment as a prerequisite for our continued existence.</span></div>
+<div style="position:absolute;left:130.80px;top:640.45px" class="cls_014"><span class="cls_014">The following must hold true if there is to be evolution by a variational mechanism:</span></div>
+<div style="position:absolute;left:112.55px;top:660.20px" class="cls_014"><span class="cls_014">• </span><span class="cls_023">  variation</span><span class="cls_014">. Individual variety in morphology, physiology, and behavior within</span></div>
+<div style="position:absolute;left:130.80px;top:678.70px" class="cls_014"><span class="cls_014">populations.</span></div>
+<div style="position:absolute;left:112.55px;top:698.20px" class="cls_014"><span class="cls_014">• </span><span class="cls_023">  heredity</span><span class="cls_014">. Similarities among offspring with their parents more than non-relatives.</span></div>
+<div style="position:absolute;left:112.55px;top:717.97px" class="cls_014"><span class="cls_014">• </span><span class="cls_023">  selection</span><span class="cls_014">. Chances of survival and reproduction in certain environments varies</span></div>
+<div style="position:absolute;left:130.80px;top:736.47px" class="cls_014"><span class="cls_014">with different forms.</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">7</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6816px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background09.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:256.85px;top:71.03px" class="cls_018"><span class="cls_018">The Notion of a System</span></div>
+<div style="position:absolute;left:130.55px;top:90.03px" class="cls_014"><span class="cls_014">A </span><span class="cls_071">system</span><span class="cls_014"> is any group of entities with an ongoing cause-and-effect relationship</span></div>
+<div style="position:absolute;left:112.55px;top:109.03px" class="cls_014"><span class="cls_014">which gives the system its </span><span class="cls_071">structure</span><span class="cls_014"> and determines how it is organized. If the</span></div>
+<div style="position:absolute;left:112.55px;top:128.05px" class="cls_014"><span class="cls_014">processes in a system do not lead to organizational change, the system is in a state</span></div>
+<div style="position:absolute;left:112.55px;top:147.05px" class="cls_014"><span class="cls_014">of </span><span class="cls_071">equilibrium</span><span class="cls_014">. When there is structural change, the equilibrium is </span><span class="cls_071">dynamic</span><span class="cls_014">; when there</span></div>
+<div style="position:absolute;left:112.55px;top:166.05px" class="cls_014"><span class="cls_014">is none, it is </span><span class="cls_071">static</span><span class="cls_014">. A system is </span><span class="cls_071">out of equilibrium</span><span class="cls_014"> when it has earlier experienced static</span></div>
+<div style="position:absolute;left:112.55px;top:185.05px" class="cls_014"><span class="cls_014">equilibrium and is in the process of failing to exhibit dynamic equilibrium, before there</span></div>
+<div style="position:absolute;left:112.55px;top:204.08px" class="cls_014"><span class="cls_014">is a change in its organization (after which it is no longer the same system).</span></div>
+<div style="position:absolute;left:130.55px;top:242.08px" class="cls_014"><span class="cls_014">Loss of dynamic equilibrium in individuals as systems results in death; in species,</span></div>
+<div style="position:absolute;left:112.55px;top:261.08px" class="cls_014"><span class="cls_014">this results in their extinction. In ecosystems, however, the distinction is not so clear.</span></div>
+<div style="position:absolute;left:112.55px;top:280.08px" class="cls_014"><span class="cls_014">If a tropical forest becomes a semi-arid desert, the dynamic equilibrium of the original</span></div>
+<div style="position:absolute;left:112.55px;top:299.10px" class="cls_014"><span class="cls_014">system has been lost - and so there has been system change - even if some of the</span></div>
+<div style="position:absolute;left:112.55px;top:317.85px" class="cls_014"><span class="cls_014">original species remain. In ecosystems, the loss of a system can be avoided despite</span></div>
+<div style="position:absolute;left:112.55px;top:336.85px" class="cls_014"><span class="cls_014">loss of equilibrium due to their ability to regenerate. Unlike physical systems,</span></div>
+<div style="position:absolute;left:112.55px;top:355.85px" class="cls_014"><span class="cls_014">ecosystems tend to decrease in entropy, thanks to solar energy.</span></div>
+<div style="position:absolute;left:130.55px;top:393.87px" class="cls_014"><span class="cls_014">Other important systems notions are those of open, closed, and isolated systems.</span></div>
+<div style="position:absolute;left:112.55px;top:412.87px" class="cls_014"><span class="cls_014">The solar system is an </span><span class="cls_071">open system</span><span class="cls_014">, taking in matter and energy from outside, as well</span></div>
+<div style="position:absolute;left:112.55px;top:431.87px" class="cls_014"><span class="cls_014">as giving off solar energy to the outside. In a </span><span class="cls_071">closed system</span><span class="cls_014">, matter neither enters nor</span></div>
+<div style="position:absolute;left:112.55px;top:450.87px" class="cls_014"><span class="cls_014">leaves; and in an </span><span class="cls_071">isolated system</span><span class="cls_014">, energy neither enters nor leaves.</span></div>
+<div style="position:absolute;left:180.08px;top:482.15px" class="cls_018"><span class="cls_018">Figure 5</span></div>
+<div style="position:absolute;left:180.08px;top:501.15px" class="cls_037"><span class="cls_037">Illustration of an Open, Closed and Isolated System.</span></div>
+<div style="position:absolute;left:232.60px;top:552.92px" class="cls_008"><span class="cls_008">water</span></div>
+<div style="position:absolute;left:232.35px;top:565.92px" class="cls_008"><span class="cls_008">vapor</span></div>
+<div style="position:absolute;left:187.83px;top:620.92px" class="cls_008"><span class="cls_008">energy</span></div>
+<div style="position:absolute;left:267.35px;top:620.43px" class="cls_008"><span class="cls_008">energy</span></div>
+<div style="position:absolute;left:180.08px;top:656.95px" class="cls_052"><span class="cls_052">Note</span><span class="cls_048">. Modified from Baker’s Environmental Systems &</span></div>
+<div style="position:absolute;left:180.08px;top:674.95px" class="cls_048"><span class="cls_048">Societies Class. (2015, September 21). Environmental</span></div>
+<div style="position:absolute;left:180.08px;top:692.95px" class="cls_048"><span class="cls_048">Systems & Societies: Open, Closed and Isolated Systems.</span></div>
+<div style="position:absolute;left:180.08px;top:711.20px" class="cls_048"><span class="cls_048">Environmental</span></div>
+<div style="position:absolute;left:285.63px;top:711.20px" class="cls_048"><span class="cls_048">Systems</span></div>
+<div style="position:absolute;left:364.15px;top:711.20px" class="cls_048"><span class="cls_048">&</span></div>
+<div style="position:absolute;left:409.18px;top:711.20px" class="cls_048"><span class="cls_048">Societies.</span></div>
+<div style="position:absolute;left:180.08px;top:729.22px" class="cls_048"><span class="cls_048"> </span><A HREF="http://srhsess.blogspot.com/2015/09/open-closed-and-">http://srhsess.blogspot.com/2015/09/open-closed-and-</A> </div>
+<div style="position:absolute;left:180.08px;top:747.47px" class="cls_048"><span class="cls_048">isolated-systems.html</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">8</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7668px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background10.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:94.55px;top:71.30px" class="cls_035"><span class="cls_035">7.</span></div>
+<div style="position:absolute;left:112.55px;top:71.03px" class="cls_018"><span class="cls_018">The Principle of Ecology</span></div>
+<div style="position:absolute;left:130.55px;top:96.28px" class="cls_014"><span class="cls_014">“Various groupings of living beings constitute systems, each of which may or may</span></div>
+<div style="position:absolute;left:112.55px;top:115.30px" class="cls_014"><span class="cls_014">not be in equilibrium with the other systems constituting its environment.”</span></div>
+<div style="position:absolute;left:130.55px;top:153.30px" class="cls_014"><span class="cls_014">The systems with which the human species interacts are physical and biological.</span></div>
+<div style="position:absolute;left:112.55px;top:172.30px" class="cls_014"><span class="cls_014">Examples of biological systems in living beings are DNA strands, cells, and organs.</span></div>
+<div style="position:absolute;left:112.55px;top:191.30px" class="cls_014"><span class="cls_014">Individual living beings such as plants and animals are also biological systems. And</span></div>
+<div style="position:absolute;left:112.55px;top:210.33px" class="cls_014"><span class="cls_014">populations of living beings constitute systems, which are subsystems of even larger</span></div>
+<div style="position:absolute;left:112.55px;top:229.33px" class="cls_014"><span class="cls_014">systems, namely ecosystems. Eventually we get to the largest ecosystem, the</span></div>
+<div style="position:absolute;left:112.55px;top:248.33px" class="cls_014"><span class="cls_014">biosphere, which has all other biological systems as subsystems.</span></div>
+<div style="position:absolute;left:130.55px;top:286.32px" class="cls_014"><span class="cls_014">The existence of each species, like the existence of the biosphere as a whole, is</span></div>
+<div style="position:absolute;left:112.55px;top:305.10px" class="cls_014"><span class="cls_014">dependent on solar energy (Figure 6). In terms of systems, the maintenance of the</span></div>
+<div style="position:absolute;left:112.55px;top:324.10px" class="cls_014"><span class="cls_014">population of each species as a system requires an influx of solar energy  to</span></div>
+<div style="position:absolute;left:112.55px;top:343.10px" class="cls_014"><span class="cls_014">(temporarily) counteract the effects of the entropy principle. In the case of plants this</span></div>
+<div style="position:absolute;left:112.55px;top:362.10px" class="cls_014"><span class="cls_014">input is at least partly direct, via photosynthesis. For humans and other animals, it</span></div>
+<div style="position:absolute;left:112.55px;top:381.12px" class="cls_014"><span class="cls_014">consists in taking usable energy from other material (biological and physical) systems,</span></div>
+<div style="position:absolute;left:112.55px;top:400.12px" class="cls_014"><span class="cls_014">thereby increasing their entropy - in accordance with the entropy principle.</span></div>
+<div style="position:absolute;left:207.08px;top:438.12px" class="cls_018"><span class="cls_018">Figure 6</span></div>
+<div style="position:absolute;left:207.08px;top:460.65px" class="cls_037"><span class="cls_037">The Earth receiving energy from the sun.</span></div>
+<div style="position:absolute;left:207.08px;top:616.68px" class="cls_037"><span class="cls_037">Note. </span><span class="cls_014">Solar energy is needed to maintain</span></div>
+<div style="position:absolute;left:207.08px;top:635.70px" class="cls_014"><span class="cls_014">plant and animal populations. From “</span><span class="cls_037">Is the</span></div>
+<div style="position:absolute;left:207.08px;top:654.70px" class="cls_037"><span class="cls_037">Distance from the Earth to the Sun Always</span></div>
+<div style="position:absolute;left:207.08px;top:673.70px" class="cls_037"><span class="cls_037">the</span></div>
+<div style="position:absolute;left:244.10px;top:673.70px" class="cls_037"><span class="cls_037">Same?”</span><span class="cls_014">,</span></div>
+<div style="position:absolute;left:307.38px;top:673.70px" class="cls_014"><span class="cls_014">K.</span></div>
+<div style="position:absolute;left:339.40px;top:673.70px" class="cls_014"><span class="cls_014">Bryant,</span></div>
+<div style="position:absolute;left:395.92px;top:673.70px" class="cls_014"><span class="cls_014">2019,</span></div>
+<div style="position:absolute;left:207.08px;top:692.70px" class="cls_014"><span class="cls_014">https:/</span><A HREF="http://www.rd.com/article/distance-from-">/www.rd.com/article/distance-from-</A> </div>
+<div style="position:absolute;left:207.08px;top:711.70px" class="cls_014"><span class="cls_014">earth-to-sun/</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:505.45px;top:771.22px" class="cls_030"><span class="cls_030">9</span></div>
+<div style="position:absolute;left:72.28px;top:792.22px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8520px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background11.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:85.53px;top:71.03px" class="cls_018"><span class="cls_018">Figure 7</span></div>
+<div style="position:absolute;left:85.53px;top:90.03px" class="cls_037"><span class="cls_037">Levels of Ecological Organization.</span></div>
+<div style="position:absolute;left:91.30px;top:109.03px" class="cls_014"><span class="cls_014">Biosphere</span></div>
+<div style="position:absolute;left:157.58px;top:109.53px" class="cls_014"><span class="cls_014">The part of</span></div>
+<div style="position:absolute;left:157.58px;top:122.05px" class="cls_014"><span class="cls_014">the Earth</span></div>
+<div style="position:absolute;left:157.58px;top:134.80px" class="cls_014"><span class="cls_014">that contains</span></div>
+<div style="position:absolute;left:157.58px;top:147.30px" class="cls_014"><span class="cls_014">all</span></div>
+<div style="position:absolute;left:157.58px;top:160.05px" class="cls_014"><span class="cls_014">ecosystems</span></div>
+<div style="position:absolute;left:91.30px;top:205.58px" class="cls_014"><span class="cls_014">Ecosystem</span></div>
+<div style="position:absolute;left:157.58px;top:206.08px" class="cls_014"><span class="cls_014">Community</span></div>
+<div style="position:absolute;left:157.58px;top:218.83px" class="cls_014"><span class="cls_014">and its</span></div>
+<div style="position:absolute;left:157.58px;top:231.33px" class="cls_014"><span class="cls_014">nonliving</span></div>
+<div style="position:absolute;left:157.58px;top:244.08px" class="cls_014"><span class="cls_014">surroundings</span></div>
+<div style="position:absolute;left:91.30px;top:321.60px" class="cls_014"><span class="cls_014">Community</span></div>
+<div style="position:absolute;left:157.58px;top:322.10px" class="cls_014"><span class="cls_014">Populations</span></div>
+<div style="position:absolute;left:157.58px;top:334.85px" class="cls_014"><span class="cls_014">that live</span></div>
+<div style="position:absolute;left:157.58px;top:347.35px" class="cls_014"><span class="cls_014">together in a</span></div>
+<div style="position:absolute;left:157.58px;top:360.10px" class="cls_014"><span class="cls_014">defined area</span></div>
+<div style="position:absolute;left:91.30px;top:392.12px" class="cls_014"><span class="cls_014">Population</span></div>
+<div style="position:absolute;left:157.58px;top:392.62px" class="cls_014"><span class="cls_014">Group of</span></div>
+<div style="position:absolute;left:157.58px;top:405.12px" class="cls_014"><span class="cls_014">organisms</span></div>
+<div style="position:absolute;left:157.58px;top:417.87px" class="cls_014"><span class="cls_014">that live in</span></div>
+<div style="position:absolute;left:157.58px;top:430.37px" class="cls_014"><span class="cls_014">the same</span></div>
+<div style="position:absolute;left:157.58px;top:443.12px" class="cls_014"><span class="cls_014">area</span></div>
+<div style="position:absolute;left:91.30px;top:470.65px" class="cls_014"><span class="cls_014">Organism</span></div>
+<div style="position:absolute;left:157.58px;top:470.65px" class="cls_014"><span class="cls_014">Individual</span></div>
+<div style="position:absolute;left:157.58px;top:483.15px" class="cls_014"><span class="cls_014">living thing</span></div>
+<div style="position:absolute;left:91.30px;top:528.90px" class="cls_014"><span class="cls_014">Groups of</span></div>
+<div style="position:absolute;left:157.58px;top:528.90px" class="cls_014"><span class="cls_014">Tissues,</span></div>
+<div style="position:absolute;left:91.30px;top:541.65px" class="cls_014"><span class="cls_014">cells</span></div>
+<div style="position:absolute;left:157.58px;top:541.40px" class="cls_014"><span class="cls_014">organs, and</span></div>
+<div style="position:absolute;left:157.58px;top:553.92px" class="cls_014"><span class="cls_014">organ</span></div>
+<div style="position:absolute;left:157.58px;top:566.67px" class="cls_014"><span class="cls_014">systems</span></div>
+<div style="position:absolute;left:91.30px;top:579.67px" class="cls_014"><span class="cls_014">Cells</span></div>
+<div style="position:absolute;left:157.58px;top:580.17px" class="cls_014"><span class="cls_014">Smallest</span></div>
+<div style="position:absolute;left:157.58px;top:592.92px" class="cls_014"><span class="cls_014">functional</span></div>
+<div style="position:absolute;left:157.58px;top:605.43px" class="cls_014"><span class="cls_014">unit of life</span></div>
+<div style="position:absolute;left:91.30px;top:624.67px" class="cls_014"><span class="cls_014">Molecules</span></div>
+<div style="position:absolute;left:157.58px;top:625.17px" class="cls_014"><span class="cls_014">Groups of</span></div>
+<div style="position:absolute;left:157.58px;top:637.70px" class="cls_014"><span class="cls_014">atoms;</span></div>
+<div style="position:absolute;left:157.58px;top:650.45px" class="cls_014"><span class="cls_014">smallest unit</span></div>
+<div style="position:absolute;left:157.58px;top:663.20px" class="cls_014"><span class="cls_014">of most</span></div>
+<div style="position:absolute;left:157.58px;top:675.70px" class="cls_014"><span class="cls_014">chemical</span></div>
+<div style="position:absolute;left:157.58px;top:688.45px" class="cls_014"><span class="cls_014">compounds</span></div>
+<div style="position:absolute;left:85.53px;top:716.72px" class="cls_037"><span class="cls_037">Note. </span><span class="cls_014">   Adapted    from </span><span class="cls_037">   C4:    Ecosystems    &    Communities</span><span class="cls_014">,    by    B.    Allison,</span></div>
+<div style="position:absolute;left:85.53px;top:735.72px" class="cls_014"><span class="cls_014"> </span><A HREF="https://slideplayer.com/slide/14361195/">https://slideplayer.com/slide/14361195/</A> </div>
+<div style="position:absolute;left:72.03px;top:778.72px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:494.20px;top:771.22px" class="cls_031"><span class="cls_031">10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9372px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background12.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:130.55px;top:71.03px" class="cls_014"><span class="cls_014">As  compared  with  physical  systems,  systems  involving  living  beings  are</span></div>
+<div style="position:absolute;left:112.55px;top:90.03px" class="cls_014"><span class="cls_014">exceedingly complex. Nevertheless, limits can be set on what behavior is possible,</span></div>
+<div style="position:absolute;left:112.55px;top:109.03px" class="cls_014"><span class="cls_014">thanks to the principles being presented here. For example, the entropy principle</span></div>
+<div style="position:absolute;left:112.55px;top:128.05px" class="cls_014"><span class="cls_014">makes it impossible for a sustainable society to continue using a finite resource</span></div>
+<div style="position:absolute;left:112.55px;top:147.05px" class="cls_014"><span class="cls_014">indefinitely. Another difference between populations of living systems and purely</span></div>
+<div style="position:absolute;left:112.55px;top:166.05px" class="cls_014"><span class="cls_014">physical systems, as taken up in the previous section, is that each living system tends</span></div>
+<div style="position:absolute;left:112.55px;top:185.05px" class="cls_014"><span class="cls_014">to increase, not decrease, in its degree of organization.</span></div>
+<div style="position:absolute;left:130.55px;top:223.08px" class="cls_014"><span class="cls_014">Living systems could be physically defined as open systems in which entropy</span></div>
+<div style="position:absolute;left:112.55px;top:242.08px" class="cls_014"><span class="cls_014">tends to decrease. Against the background of the entropy law, this means that living</span></div>
+<div style="position:absolute;left:112.55px;top:260.83px" class="cls_014"><span class="cls_014">systems must exist in larger physical systems in which the total entropy is increasing.</span></div>
+<div style="position:absolute;left:112.55px;top:279.83px" class="cls_014"><span class="cls_014">This energy-accumulating aspect of life lies behind the principle of population.</span></div>
+<div style="position:absolute;left:94.55px;top:318.12px" class="cls_035"><span class="cls_035">8.</span></div>
+<div style="position:absolute;left:112.55px;top:317.85px" class="cls_018"><span class="cls_018">The Principle of Population</span></div>
+<div style="position:absolute;left:112.55px;top:337.14px" class="cls_057"><span class="cls_057">a.</span></div>
+<div style="position:absolute;left:130.80px;top:336.85px" class="cls_014"><span class="cls_014">“There is a tendency for the human population (and that of any species) to be as</span></div>
+<div style="position:absolute;left:130.80px;top:355.85px" class="cls_014"><span class="cls_014">large as its environment will allow.”</span></div>
+<div style="position:absolute;left:112.55px;top:374.87px" class="cls_057"><span class="cls_057">b. </span><span class="cls_014">  If there were no checks to population size, that of the human (or any) population</span></div>
+<div style="position:absolute;left:130.80px;top:393.87px" class="cls_014"><span class="cls_014">would tend to increase indefinitely.</span></div>
+<div style="position:absolute;left:130.55px;top:431.62px" class="cls_014"><span class="cls_014">Nonhuman populations tend to increase and decrease in cycles. The greater the</span></div>
+<div style="position:absolute;left:112.55px;top:450.62px" class="cls_014"><span class="cls_014">numbers of a species, the greater the food consumption, ultimately leading to the</span></div>
+<div style="position:absolute;left:112.55px;top:469.65px" class="cls_014"><span class="cls_014">population’s experiencing scarcity. This in turn requires reduced consumption, which</span></div>
+<div style="position:absolute;left:112.55px;top:488.65px" class="cls_014"><span class="cls_014">leads to a reduction in population size, allowing the resource to recover.</span></div>
+<div style="position:absolute;left:94.55px;top:526.92px" class="cls_035"><span class="cls_035">9.</span></div>
+<div style="position:absolute;left:112.55px;top:526.65px" class="cls_018"><span class="cls_018">The Vicious Circle Principle</span></div>
+<div style="position:absolute;left:130.55px;top:545.67px" class="cls_014"><span class="cls_014">“Human development consists in an accelerating movement from situations of</span></div>
+<div style="position:absolute;left:112.55px;top:564.42px" class="cls_014"><span class="cls_014">resource scarcity, to technological innovation, to resource increase, to increased</span></div>
+<div style="position:absolute;left:112.55px;top:583.18px" class="cls_014"><span class="cls_014">consumption, to population growth, and back to resource scarcity.”</span></div>
+<div style="position:absolute;left:144.05px;top:625.17px" class="cls_018"><span class="cls_018">Figure 8</span></div>
+<div style="position:absolute;left:305.63px;top:625.92px" class="cls_034"><span class="cls_034">resource</span></div>
+<div style="position:absolute;left:382.15px;top:628.66px" class="cls_063"><span class="cls_063">technological</span></div>
+<div style="position:absolute;left:306.88px;top:640.69px" class="cls_059"><span class="cls_059">scarcity</span></div>
+<div style="position:absolute;left:388.42px;top:643.46px" class="cls_064"><span class="cls_064">innovation</span></div>
+<div style="position:absolute;left:144.05px;top:647.95px" class="cls_037"><span class="cls_037">Vicious circle</span></div>
+<div style="position:absolute;left:144.05px;top:672.20px" class="cls_037"><span class="cls_037">of human development</span></div>
+<div style="position:absolute;left:279.13px;top:683.45px" class="cls_061"><span class="cls_061">population</span></div>
+<div style="position:absolute;left:405.42px;top:684.69px" class="cls_065"><span class="cls_065">resource</span></div>
+<div style="position:absolute;left:291.38px;top:698.70px" class="cls_061"><span class="cls_061">growth</span></div>
+<div style="position:absolute;left:405.42px;top:699.69px" class="cls_059"><span class="cls_059">increase</span></div>
+<div style="position:absolute;left:338.15px;top:727.22px" class="cls_063"><span class="cls_063">increased</span></div>
+<div style="position:absolute;left:328.65px;top:742.46px" class="cls_059"><span class="cls_059">consumption</span></div>
+<div style="position:absolute;left:72.03px;top:778.72px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:494.20px;top:771.22px" class="cls_031"><span class="cls_031">11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10224px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background13.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:130.55px;top:71.03px" class="cls_014"><span class="cls_014">The human species is unique in sometimes reacting to resource shortage, or</span></div>
+<div style="position:absolute;left:112.55px;top:90.03px" class="cls_014"><span class="cls_014">threat of resource shortage, with </span><span class="cls_071">innovative technology</span><span class="cls_014">. But where other species have</span></div>
+<div style="position:absolute;left:112.55px;top:109.03px" class="cls_014"><span class="cls_014">settled down to roughly stable population sizes within certain limits (until losing</span></div>
+<div style="position:absolute;left:112.55px;top:128.05px" class="cls_014"><span class="cls_014">equilibrium and becoming extinct), we humans have not yet come to the point where</span></div>
+<div style="position:absolute;left:112.55px;top:147.05px" class="cls_014"><span class="cls_014">our population has stopped growing for the first time. We have not only been pushing</span></div>
+<div style="position:absolute;left:112.55px;top:166.05px" class="cls_014"><span class="cls_014">against the limits of our environment, we have constantly been stretching those limits.</span></div>
+<div style="position:absolute;left:112.55px;top:185.05px" class="cls_014"><span class="cls_014">In other words, the human species, as a system, has yet to attain the static equilibrium</span></div>
+<div style="position:absolute;left:112.55px;top:204.08px" class="cls_014"><span class="cls_014">necessary for its dynamic equilibrium even to be tested.</span></div>
+<div style="position:absolute;left:160.83px;top:242.08px" class="cls_018"><span class="cls_018">Latest Developments. </span><span class="cls_037">Match the following technological innovations to the</span></div>
+<div style="position:absolute;left:160.83px;top:261.08px" class="cls_037"><span class="cls_037">environmental problems they address (answers on page 12)</span></div>
+<div style="position:absolute;left:116.55px;top:287.35px" class="cls_014"><span class="cls_014">1. Air pollution and depletion of fossil</span></div>
+<div style="position:absolute;left:329.15px;top:294.10px" class="cls_014"><span class="cls_014">a. smart home technology</span></div>
+<div style="position:absolute;left:134.80px;top:306.10px" class="cls_014"><span class="cls_014">fuels in transportation</span></div>
+<div style="position:absolute;left:329.15px;top:325.35px" class="cls_014"><span class="cls_014">b. “Direct Air Capture” (DAC) of CO</span><span class="cls_021">2</span></div>
+<div style="position:absolute;left:116.55px;top:334.85px" class="cls_014"><span class="cls_014">2. Climate change</span></div>
+<div style="position:absolute;left:347.15px;top:344.35px" class="cls_014"><span class="cls_014">from the atmosphere</span></div>
+<div style="position:absolute;left:116.55px;top:362.35px" class="cls_014"><span class="cls_014">3. Energy wastage from appliances</span></div>
+<div style="position:absolute;left:329.15px;top:362.35px" class="cls_014"><span class="cls_014">c. coco bio-diesel</span></div>
+<div style="position:absolute;left:94.55px;top:401.12px" class="cls_018"><span class="cls_018">Supplemental learning:</span></div>
+<div style="position:absolute;left:94.55px;top:420.62px" class="cls_014"><span class="cls_014">•  Watch</span></div>
+<div style="position:absolute;left:163.33px;top:420.62px" class="cls_014"><span class="cls_014">a</span></div>
+<div style="position:absolute;left:193.58px;top:420.62px" class="cls_014"><span class="cls_014">three-minute</span></div>
+<div style="position:absolute;left:279.63px;top:420.62px" class="cls_014"><span class="cls_014">video</span></div>
+<div style="position:absolute;left:329.90px;top:420.62px" class="cls_014"><span class="cls_014">“What</span></div>
+<div style="position:absolute;left:383.40px;top:420.62px" class="cls_014"><span class="cls_014">is</span></div>
+<div style="position:absolute;left:415.42px;top:420.62px" class="cls_014"><span class="cls_014">Sustainability?”</span></div>
+<div style="position:absolute;left:514.23px;top:420.62px" class="cls_014"><span class="cls_014">at</span></div>
+<div style="position:absolute;left:108.05px;top:439.12px" class="cls_072"><span class="cls_072"> </span><A HREF="https://www.youtube.com/watch?v=gtamnlxbgqc/">https://www.youtube.com/watch?v=gTamnlXbgqc</A> </div>
+<div style="position:absolute;left:94.55px;top:458.90px" class="cls_014"><span class="cls_014">•  Watch</span></div>
+<div style="position:absolute;left:167.33px;top:458.90px" class="cls_014"><span class="cls_014">a</span></div>
+<div style="position:absolute;left:201.33px;top:458.90px" class="cls_014"><span class="cls_014">four-minute</span></div>
+<div style="position:absolute;left:285.13px;top:458.90px" class="cls_014"><span class="cls_014">video</span></div>
+<div style="position:absolute;left:339.40px;top:458.90px" class="cls_014"><span class="cls_014">“Sustainability</span></div>
+<div style="position:absolute;left:435.92px;top:458.90px" class="cls_014"><span class="cls_014">explained”</span></div>
+<div style="position:absolute;left:514.72px;top:458.90px" class="cls_014"><span class="cls_014">at</span></div>
+<div style="position:absolute;left:108.05px;top:477.65px" class="cls_072"><span class="cls_072"> </span><A HREF="https://www.youtube.com/watch?v=_5r4loxpyx8/">https://www.youtube.com/watch?v=_5r4loXPyx8</A> </div>
+<div style="position:absolute;left:94.55px;top:497.15px" class="cls_014"><span class="cls_014">•  Boersema, J., & Reijnders, L. (Eds.). (2009). Chapter 7—General Principles. In</span></div>
+<div style="position:absolute;left:108.05px;top:515.90px" class="cls_014"><span class="cls_014">Principles of Environmental Sciences. Springer Science + Business Media B.V.</span></div>
+<div style="position:absolute;left:108.05px;top:534.65px" class="cls_072"><span class="cls_072"> </span><A HREF="https://doctoradocienciasambientales.files.wordpress.com/2012/09/principles-of-/">https://doctoradocienciasambientales.files.wordpress.com/2012/09/principles-of-</A> </div>
+<div style="position:absolute;left:108.05px;top:553.42px" class="cls_072"><span class="cls_072">environmental-sciences1.pdf</span></div>
+<div style="position:absolute;left:72.03px;top:591.67px" class="cls_018"><span class="cls_018">Self-evaluation</span></div>
+<div style="position:absolute;left:94.55px;top:610.92px" class="cls_014"><span class="cls_014">•  What is environmental science? Explain in your own words.</span></div>
+<div style="position:absolute;left:94.55px;top:630.70px" class="cls_014"><span class="cls_014">•  Explain each of the environmental principles in your own words.</span></div>
+<div style="position:absolute;left:72.03px;top:668.70px" class="cls_018"><span class="cls_018">Review of Concepts</span></div>
+<div style="position:absolute;left:94.55px;top:688.45px" class="cls_014"><span class="cls_014">• </span><span class="cls_018"> Environmental science </span><span class="cls_014">- a systematic study of our environment and their inter-</span></div>
+<div style="position:absolute;left:108.05px;top:707.45px" class="cls_014"><span class="cls_014">relationships. ES integrates the various fields of the biological and physical sciences</span></div>
+<div style="position:absolute;left:108.05px;top:726.22px" class="cls_014"><span class="cls_014">in  understanding  how  our  environment  works  and  in  analyzing  environmental</span></div>
+<div style="position:absolute;left:108.05px;top:745.22px" class="cls_014"><span class="cls_014">problems.</span></div>
+<div style="position:absolute;left:72.03px;top:778.72px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:494.20px;top:771.22px" class="cls_031"><span class="cls_031">12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11076px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background14.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:94.55px;top:71.53px" class="cls_014"><span class="cls_014">•</span></div>
+<div style="position:absolute;left:108.05px;top:71.53px" class="cls_014"><span class="cls_014">Principles of environmental science:</span></div>
+<div style="position:absolute;left:126.05px;top:90.53px" class="cls_018"><span class="cls_018">Sustainable development </span><span class="cls_014">- we must pursue lifestyles that can support the needs</span></div>
+<div style="position:absolute;left:126.05px;top:109.28px" class="cls_014"><span class="cls_014">of both the present and future generations. It has 3 pillars: society, environment</span></div>
+<div style="position:absolute;left:126.05px;top:128.30px" class="cls_014"><span class="cls_014">and economy.</span></div>
+<div style="position:absolute;left:126.05px;top:147.55px" class="cls_018"><span class="cls_018">Conservation of Energy (First Law of Thermodynamics) </span><span class="cls_014">- Quantity of energy is</span></div>
+<div style="position:absolute;left:126.05px;top:166.55px" class="cls_014"><span class="cls_014">constant: energy can be neither created nor destroyed, but only transformed.</span></div>
+<div style="position:absolute;left:126.05px;top:185.55px" class="cls_018"><span class="cls_018">E=MC</span><span class="cls_036"><sup>2</sup></span><span class="cls_018"> (energy equals mass times the speed of light squared) </span><span class="cls_014">- matter is a</span></div>
+<div style="position:absolute;left:126.05px;top:204.58px" class="cls_014"><span class="cls_014">form of energy</span></div>
+<div style="position:absolute;left:126.05px;top:223.58px" class="cls_018"><span class="cls_018">Conservation of Matter </span><span class="cls_014">- Quantity of matter is constant</span></div>
+<div style="position:absolute;left:126.05px;top:242.58px" class="cls_018"><span class="cls_018">Entropy Principle (Second Law of Thermodynamics) </span><span class="cls_014">- systems tend towards</span></div>
+<div style="position:absolute;left:126.05px;top:261.33px" class="cls_014"><span class="cls_014">disorder; or, the amount of entropy in a system tends to increase. In other words,</span></div>
+<div style="position:absolute;left:126.05px;top:280.08px" class="cls_014"><span class="cls_014">the quality of the energy in a system tends to decline.</span></div>
+<div style="position:absolute;left:126.05px;top:299.35px" class="cls_018"><span class="cls_018">Evolution </span><span class="cls_014">- Adaptation to biological and physical environment is necessary for</span></div>
+<div style="position:absolute;left:126.05px;top:318.35px" class="cls_014"><span class="cls_014">continued existence of species</span></div>
+<div style="position:absolute;left:126.05px;top:337.35px" class="cls_018"><span class="cls_018">Ecology </span><span class="cls_014">- The environment is composed of various levels of systems such as</span></div>
+<div style="position:absolute;left:126.05px;top:356.35px" class="cls_014"><span class="cls_014">individuals, populations, communities, ecosystems, and the biosphere.</span></div>
+<div style="position:absolute;left:126.05px;top:375.12px" class="cls_018"><span class="cls_018">Population </span><span class="cls_014">- Populations tend to increase as its environment will allow and would</span></div>
+<div style="position:absolute;left:126.05px;top:393.87px" class="cls_014"><span class="cls_014">tend to increase indefinitely if there were no checks to population size.</span></div>
+<div style="position:absolute;left:126.05px;top:413.12px" class="cls_018"><span class="cls_018">Vicious circle </span><span class="cls_014">- human development consists in an accelerating movement from</span></div>
+<div style="position:absolute;left:126.05px;top:432.12px" class="cls_014"><span class="cls_014">situations of resource scarcity, to technological innovation, to resource increase, to</span></div>
+<div style="position:absolute;left:126.05px;top:451.12px" class="cls_014"><span class="cls_014">increased consumption, to population growth, and back to resource scarcity</span></div>
+<div style="position:absolute;left:72.03px;top:489.15px" class="cls_018"><span class="cls_018">Post-test</span></div>
+<div style="position:absolute;left:188.33px;top:527.15px" class="cls_014"><span class="cls_014">1. Quiz and oral recitation during face-to-face meeting</span></div>
+<div style="position:absolute;left:72.03px;top:583.92px" class="cls_018"><span class="cls_018">References</span></div>
+<div style="position:absolute;left:94.55px;top:602.92px" class="cls_014"><span class="cls_014">Allison,</span></div>
+<div style="position:absolute;left:164.08px;top:602.92px" class="cls_014"><span class="cls_014">B.</span></div>
+<div style="position:absolute;left:208.35px;top:602.92px" class="cls_014"><span class="cls_014">(n.d.)</span></div>
+<div style="position:absolute;left:270.63px;top:602.92px" class="cls_014"><span class="cls_014">C4:</span></div>
+<div style="position:absolute;left:321.88px;top:602.92px" class="cls_014"><span class="cls_014">Ecosystems</span></div>
+<div style="position:absolute;left:415.17px;top:602.92px" class="cls_014"><span class="cls_014">&</span></div>
+<div style="position:absolute;left:456.45px;top:602.92px" class="cls_014"><span class="cls_014">Communities.</span></div>
+<div style="position:absolute;left:108.05px;top:621.92px" class="cls_014"><span class="cls_014"> </span><A HREF="https://slideplayer.com/slide/14361195/">https://slideplayer.com/slide/14361195/</A> </div>
+<div style="position:absolute;left:94.55px;top:640.95px" class="cls_014"><span class="cls_014">Boersema, J., & Reijnders, L. (Eds.). (2009). Principles of Environmental Sciences.</span></div>
+<div style="position:absolute;left:108.05px;top:659.95px" class="cls_014"><span class="cls_014">Springer</span></div>
+<div style="position:absolute;left:196.33px;top:659.95px" class="cls_014"><span class="cls_014">Science</span></div>
+<div style="position:absolute;left:282.13px;top:659.95px" class="cls_014"><span class="cls_014">+</span></div>
+<div style="position:absolute;left:335.15px;top:659.95px" class="cls_014"><span class="cls_014">Business</span></div>
+<div style="position:absolute;left:426.42px;top:659.95px" class="cls_014"><span class="cls_014">Media</span></div>
+<div style="position:absolute;left:502.95px;top:659.95px" class="cls_014"><span class="cls_014">B.V.</span></div>
+<div style="position:absolute;left:108.05px;top:678.95px" class="cls_072"><span class="cls_072"> </span><A HREF="https://doctoradocienciasambientales.files.wordpress.com/2012/09/principles-of-/">https://doctoradocienciasambientales.files.wordpress.com/2012/09/principles-of-</A> </div>
+<div style="position:absolute;left:108.05px;top:697.95px" class="cls_072"><span class="cls_072">environmental-sciences1.pdf</span></div>
+<div style="position:absolute;left:72.03px;top:778.72px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:494.20px;top:771.22px" class="cls_031"><span class="cls_031">13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11928px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0981497a-332c-11ec-a980-0cc47a792c0a_id_0981497a-332c-11ec-a980-0cc47a792c0a_files/background15.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.78px;top:27.28px" class="cls_016"><span class="cls_016">LEARNING</span></div>
+<div style="position:absolute;left:167.83px;top:24.78px" class="cls_015"><span class="cls_015">SURIGAO STATE COLLEGE OF</span></div>
+<div style="position:absolute;left:94.55px;top:71.03px" class="cls_014"><span class="cls_014">Calam, C. (2018, January 23). The Newest Gold Mining Tool: Bacteria. ThermoFisher</span></div>
+<div style="position:absolute;left:108.05px;top:90.03px" class="cls_014"><span class="cls_014">Scientific.</span></div>
+<div style="position:absolute;left:177.50px;top:90.03px" class="cls_014"><span class="cls_014"> </span><A HREF="https://www.thermofisher.com/blog/mining/the-newest-gold-mining-tool-/">https://www.thermofisher.com/blog/mining/the-newest-gold-mining-tool-</A> </div>
+<div style="position:absolute;left:108.05px;top:109.03px" class="cls_014"><span class="cls_014">bacteria/</span></div>
+<div style="position:absolute;left:94.55px;top:128.05px" class="cls_014"><span class="cls_014">Cunningham, W. P., & Cunningham, M. A. (2013). Environmental Science: Inquiry &</span></div>
+<div style="position:absolute;left:108.05px;top:146.80px" class="cls_014"><span class="cls_014">Application (7th ed.). McGraw-Hill.</span></div>
+<div style="position:absolute;left:94.55px;top:165.80px" class="cls_014"><span class="cls_014">Das, G. S. (2015). Environmental Science: A Global Concern. Random Publications.</span></div>
+<div style="position:absolute;left:94.55px;top:184.80px" class="cls_014"><span class="cls_014">Environmental science. (2018). In Encyclopedia Britannica. Encyclopædia Britannica,</span></div>
+<div style="position:absolute;left:108.05px;top:203.83px" class="cls_014"><span class="cls_014">Inc. </span><A HREF="https://www.britannica.com/science/environmental-science/">https://www.britannica.com/science/environmental-science</A> </span></div>
+<div style="position:absolute;left:94.55px;top:222.83px" class="cls_014"><span class="cls_014">Flowers,  A.</span></div>
+<div style="position:absolute;left:161.50px;top:222.83px" class="cls_014"><span class="cls_014">(n.d.).  Introduction  to  Environmental  Science.  Ch</span></div>
+<div style="position:absolute;left:429.15px;top:222.83px" class="cls_014"><span class="cls_014">1  Science  &  The</span></div>
+<div style="position:absolute;left:108.05px;top:241.83px" class="cls_014"><span class="cls_014">Environment 1 Understanding Our Environment 2 The Environment and Society. - Ppt</span></div>
+<div style="position:absolute;left:108.05px;top:260.83px" class="cls_014"><span class="cls_014">download. Retrieved August 7, 2020, from </span><A HREF="https://slideplayer.com/slide/6917836/">https://slideplayer.com/slide/6917836/</A> </span></div>
+<div style="position:absolute;left:94.55px;top:279.83px" class="cls_014"><span class="cls_014">Griffiths, A. J., Gelbart, W. M., Miller, J. H., & Lewontin, R. C. (1999). Darwin’s Revolution.</span></div>
+<div style="position:absolute;left:108.05px;top:298.60px" class="cls_014"><span class="cls_014">Modern Genetic Analysis. </span><A HREF="https://www.ncbi.nlm.nih.gov/books/nbk21378/">https://www.ncbi.nlm.nih.gov/books/NBK21378/</A> </span></div>
+<div style="position:absolute;left:94.55px;top:317.85px" class="cls_014"><span class="cls_014">Sustainability    explained</span></div>
+<div style="position:absolute;left:238.85px;top:317.85px" class="cls_014"><span class="cls_014">(explainity®    explainer    video).</span></div>
+<div style="position:absolute;left:422.17px;top:317.85px" class="cls_014"><span class="cls_014">(2012,    July</span></div>
+<div style="position:absolute;left:504.70px;top:317.85px" class="cls_014"><span class="cls_014">25)</span></div>
+<div style="position:absolute;left:108.05px;top:336.60px" class="cls_072"><span class="cls_072"> </span><A HREF="https://www.youtube.com/watch?v=_5r4loxpyx8/">https://www.youtube.com/watch?v=_5r4loXPyx8</A> </div>
+<div style="position:absolute;left:94.55px;top:355.60px" class="cls_014"><span class="cls_014">The Editors of Encyclopaedia Britannica. (2020). Scientific method. In Encyclopedia</span></div>
+<div style="position:absolute;left:108.05px;top:374.87px" class="cls_014"><span class="cls_014">Britannica.</span></div>
+<div style="position:absolute;left:235.10px;top:374.87px" class="cls_014"><span class="cls_014">Encyclopædia</span></div>
+<div style="position:absolute;left:379.15px;top:374.87px" class="cls_014"><span class="cls_014">Britannica,</span></div>
+<div style="position:absolute;left:505.95px;top:374.87px" class="cls_014"><span class="cls_014">Inc.</span></div>
+<div style="position:absolute;left:108.05px;top:393.87px" class="cls_072"><span class="cls_072"> </span><A HREF="https://www.britannica.com/science/scientific-method/">https://www.britannica.com/science/scientific-method</A> </div>
+<div style="position:absolute;left:94.55px;top:412.62px" class="cls_014"><span class="cls_014">Tyler Miller, G., & Spoolman, S. (2018). Living in the Environment. Cengage Learning.</span></div>
+<div style="position:absolute;left:94.55px;top:431.37px" class="cls_014"><span class="cls_014">What is Sustainability? | Mocomi Kids. (2013, May 8).</span></div>
+<div style="position:absolute;left:108.05px;top:450.37px" class="cls_072"><span class="cls_072"> </span><A HREF="https://www.youtube.com/watch?v=gtamnlxbgqc/">https://www.youtube.com/watch?v=gTamnlXbgqc</A> </div>
+<div style="position:absolute;left:72.03px;top:778.72px" class="cls_033"><span class="cls_033">GE Envi Sci Eng’g</span></div>
+<div style="position:absolute;left:276.13px;top:778.72px" class="cls_032"><span class="cls_032">GS</span></div>
+<div style="position:absolute;left:494.20px;top:771.22px" class="cls_031"><span class="cls_031">14</span></div>
+</div>
+
+</body>
+</html>
