@@ -1,0 +1,19 @@
+body{
+	margin: 2px;;
+	padding: 2px;
+	background:#000;
+}
+
+p {
+	font-size:8px;
+	line-height:8px;
+	text-align:justify;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background: url(new.jpg) no-repeat center/cover;
+	background-attachment: fixed;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(7, 7, 7, 0);
+}
